@@ -1,4 +1,6 @@
 .vs
+.vsconfig
+.idea
 *.sln
 DerivedDataCache/
 Intermediate/
@@ -6,3 +8,4 @@ Saved/
 Binaries/
 Build/
 Documentation/
+Plugins/Developer
