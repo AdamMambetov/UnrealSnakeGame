@@ -25,11 +25,11 @@ set SourceCodePath=%ProjectRoot%\Source
 rem Build params
 set Platform=Win64
 :: Shipping, DebugGame
-set Configuration=Development
+set Configuration=Shipping
 set ArchivePath=%ProjectRoot%\Build
 
 rem Other params
-set dirsToRemove=Intermediate DerivedDataCache Saved Binaries .vs Build Documentation
+set dirsToRemove=Intermediate DerivedDataCache Saved Binaries .vs Build Documentation .idea
 set filesToRemove=*.sln
 
 rem Target generation params
@@ -43,7 +43,7 @@ set ClientExePath=%ProjectRoot%\Build\WindowsClient\%ProjectPureName%Client.exe
 set GameExePath=%ProjectRoot%\Build\Windows\%ProjectPureName%.exe
 
 rem Tests
-set TestNames=
+set TestNames=Snake
 set TestOutputLogPath=%ProjectRoot%\Build\Tests\Tests.log
 set ReportOutputPath=%ProjectRoot%\Build\Tests
 set ExludedPathForTestReport=%SourceCodePath%\%ProjectPureName%\Tests
